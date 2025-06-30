@@ -1,0 +1,146 @@
+.dashboard-admin {
+  margin-top: 30px;
+  padding: 30px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-admin h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.acciones-admin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.acciones-admin button {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.acciones-admin button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(to right, #0056b3, #003f7f);
+}
+
+.formulario-admin {
+  background-color: #f4f6f9;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formulario-admin form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.formulario-admin h3 {
+  text-align: center;
+  font-size: 22px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.formulario-admin input,
+.formulario-admin select {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border 0.3s ease;
+}
+
+.formulario-admin input:focus,
+.formulario-admin select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.formulario-admin button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-admin button[type="submit"]:hover {
+  background-color: #1e7e34;
+}
+
+.btn-cerrar,
+.btn-volver-rol {
+  background: #e74c3c;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cerrar:hover,
+.btn-volver-rol:hover {
+  background: #c0392b;
+}
+.acciones-admin {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.seccion-botones {
+  background-color: #f9f9f9;
+  border: 1px solid #e1e1e1;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.seccion-botones h4 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.seccion-botones button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+

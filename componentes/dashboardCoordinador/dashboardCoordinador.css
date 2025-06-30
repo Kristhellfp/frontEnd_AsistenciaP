@@ -1,0 +1,205 @@
+.dashboard-coordinador {
+  margin-top: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+/* Selector de nivel */
+.selector-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.selector-container select {
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+  min-width: 220px;
+}
+
+.selector-container select:hover,
+.selector-container select:focus {
+  border-color: #004085;
+  outline: none;
+}
+
+/* Botones de acciones */
+.acciones-coordinador {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.acciones-coordinador button {
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* Evita que el texto se divida */
+}
+
+.btn-agregar {
+  background-color: #28a745;
+}
+.btn-agregar:hover {
+  background-color: #1e7e34;
+}
+
+.btn-eliminar {
+  background-color: #dc3545;
+}
+.btn-eliminar:hover {
+  background-color: #a71d2a;
+}
+
+.btn-reporte {
+  background-color: #004085;
+}
+.btn-reporte:hover {
+  background-color: #002752;
+}
+
+/* Listado de profesores */
+.profesores-container {
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  max-height: 220px;        /* Limita la altura */
+  overflow-y: auto;         /* Scroll solo vertical */
+}
+
+/* Evita que cada profesor ocupe demasiado espacio y mantén layout ordenado */
+.profesor-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.profesor-item:last-child {
+  border-bottom: none;
+}
+
+.profesor-item span {
+  font-weight: 600;
+  flex: 1 1 auto;
+  color: #004085;
+  min-width: 150px;
+  margin-right: 10px;
+  word-break: break-word;
+}
+
+/* Formulario agregar */
+.form-profesor form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.form-profesor h3 {
+  width: 100%;
+  text-align: center;
+  color: #004085;
+  margin-bottom: 10px;
+}
+
+.form-profesor input,
+.form-profesor select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  min-width: 200px;
+}
+
+.form-profesor button {
+  background-color: #004085;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.form-profesor button:hover {
+  background-color: #002752;
+}
+
+.alumnos-container {
+  max-height: 350px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.alumno {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.alumno:last-child {
+  border-bottom: none;
+}
+
+.alumno .nombre {
+  font-weight: 600;
+  color: #004085;
+  min-width: 120px;
+  cursor: pointer;
+  flex: 1 1 auto;
+  word-break: break-word;
+}
+
+.alumno .estado {
+  min-width: 100px;
+  color: #666;
+  flex-shrink: 0;
+}
+
+.alumno button {
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.grafica-individual-container {
+  max-width: 350px;
+  max-height: 350px;
+  margin: 0 auto 20px auto;
+  position: relative;
+}
+
+.grafica-individual-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
